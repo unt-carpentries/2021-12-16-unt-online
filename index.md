@@ -176,9 +176,7 @@ Modify the block below if there are any special requirements.
     Participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% endif %}
-  {% comment %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
-  {% endcomment %}
+  They should have any software packages listed <a href="#setup">below</a> installed.
 </p>
 
 {% comment %}
@@ -375,15 +373,7 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
-  {% if site.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
+  To participate in this workshop,
   you will need access to software as described below.
   In addition, you will need an up-to-date web browser.
 </p>
@@ -417,7 +407,7 @@ during the workshop.
 {% elsif site.carpentry == "dc" %}
 {% include dc/setup.html %}
 {% elsif site.carpentry == "lc" %}
-{% include lc/setup.html %}
+{% include lc/setup_blank.html %}
 {% elsif site.carpentry == "incubator" %}
 Please check the "Setup" page of
 [the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
